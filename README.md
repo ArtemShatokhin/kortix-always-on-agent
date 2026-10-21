@@ -1,3 +1,5 @@
+# kortix-always-on-agent
+
 This is an open-source Kortix project: one agent kept on a steady job, with the rules that bound it, the connectors it may reach and the record of who let it act all in this repository.
 
 A Kortix project is a git repository with a `kortix.yaml` at its root. An agent's behaviour is a file in `agents/`, its grants sit in the manifest, and every session runs in its own sandbox on its own branch. Work reaches the default branch only as a change request, so the question "may this agent do that, and who said so" has an answer a colleague can read later.
@@ -30,7 +32,7 @@ kortix sessions new --prompt "Triage examples/feedback.md and write one plan per
 kortix sessions ls
 ```
 
-Read what it produced, then merge or send it back:
+Read what it produced, then merge it or send it back:
 
 ```bash
 kortix cr ls
@@ -61,7 +63,7 @@ agents:
 
 An omitted grant resolves to none, so the missing `connectors` and `secrets` keys mean the agent reaches nothing and holds no credential. Add one connector and one secret when the job actually needs them, in a diff a reviewer sees.
 
-The agent file holds the other half of that argument, a tool policy that is narrower than the default:
+The agent file holds the other half of that argument, a tool policy narrower than the default:
 
 ```yaml
 permission:
@@ -74,7 +76,7 @@ permission:
     "rm -rf *": deny
 ```
 
-A shell command not on the allow list waits for a person. That is how a project stays honest about what an agent may do without asking.
+A shell command that is not on the allow list waits for a person. That is how a project stays honest about what an agent may do without asking.
 
 ## What is in the repository
 
