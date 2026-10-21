@@ -1,0 +1,14 @@
+# Open-source Kortix project: one always-on agent for customer feedback.
+# Every grant below is deliberate. An omitted grant resolves to none.
+kortix_version: 2
+default_agent: feedback
+
+agents:
+  feedback:
+    file: agents/feedback.md
+    # No connectors and no secrets: the agent reads files in this repository
+    # and writes plans. Add a connector and a secret only when the job needs them.
+    skills: [kortix-cli]
+    # It may read its own session and propose work for review. It may not merge:
+    # project.gitops.merge is left out so a person merges every change request.
+    kortix_permissions: [project.session.read, project.review.submit]
