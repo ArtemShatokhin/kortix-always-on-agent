@@ -95,6 +95,8 @@ Here the same job runs from a repository the company owns. The rules are two fil
 
 The longer comparison, with the licence, pricing and self-hosting rows for each open-source option, is on the Kortix blog: https://kortix.com/blog/openai-dots-alternative
 
+The two side by side, row by row — where the computer runs, who can direct the agent, what happens to its memory, and which step a person keeps — is [Kortix against a dot](https://openaidotsalternative.com/openai-dots-vs-kortix).
+
 If you are still working out what a dot actually is, [what a dot is and which parts of one you own](https://openaidotsalternative.com/what-are-openai-dots) covers how one is created, what its Custom Rules can be set to, and how much of it travels with you when you leave. The cost has more moving parts than the plan name suggests, and [the pricing at each Pro tier, set against the credits arithmetic of a paid Kortix plan](https://openaidotsalternative.com/openai-dots-cost) works through both. If the plan is to keep the machine, [what self-hosting an always-on agent actually takes](https://openaidotsalternative.com/self-hosted-always-on-agent) sets out the Linux box, the DNS records and the API key that sessions need before the first night.
 
 ## What this is not
